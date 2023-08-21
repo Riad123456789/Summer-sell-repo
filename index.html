@@ -49,7 +49,7 @@
               above & get <span class="text-[#E527B2;]">20% off</span>
             </h1>
             <p class="inline text-sm font-medium">use promo code</p>
-            <button class="btn btn-sm bg-clifford text-white">SELL200</button>
+            <button id="code" class="btn btn-sm bg-clifford text-white">SELL200</button>
           </div>
 
           <div>
@@ -199,7 +199,7 @@
                 <p class="mt-3 ml-2">Have coupon?</p>
               <div class="flex p-3">
                 <input class="w-25 flex-1 border rounded-xl p-2 text-[11px]" type="text" placeholder="coupon code">
-                <button class="btn btn-sm flex-1 bg-clifford text-white">Apply</button>
+                <button  onclick="apply(this)"  id="submit" class="btn btn-sm flex-1 bg-clifford text-white">Apply</button>
               </div>
               </div>
 
@@ -211,12 +211,12 @@
                 <hr class="mt-3">
               <div class=" p-3">
                 <p class="">Total price:  <span  id="total">00.00</span> TK </p>
-                 <p class="">Discount: <span id="">00.00</span>TK</p>
-                  <p class="">Total: <span id="">00.00</span>TK</p> 
+                 <p class="">Discount: <span id="discount">00.00</span>TK</p>
+                  <p class="">Total: <span id="priceTotal">00.00</span>TK</p> 
                   <hr class="mt-3">
                   
 
-                  <button   class=" btn btn-sm mt-4 ml-5  bg-clifford text-white" onclick="my_modal_3.showModal()">make purchese</button>
+                  <button id="secondSubmit"   class=" btn btn-sm mt-4 ml-5  bg-clifford text-white" onclick="my_modal_3.showModal()">make purchese</button>
                   <dialog  id="my_modal_3" class="modal">
                     <form style="width:300px;" method="dialog" class="modal-box">
         
